@@ -1,0 +1,134 @@
+@charset "utf-8";
+@font-face {
+    font-family: diablo;
+    src: url(fontes/diablo.ttf) format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0:#00000027;
+    --cor1: rgb(92, 0, 0);
+    --fonte0: arial, helvetica, sans-serif;
+    --fonte1: 'diablo', serif;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    height: 160px;
+    padding-top: 40px;
+    background-color: var(--cor1);
+    color: white;
+}
+
+header > h1 {
+    font-family: var(--fonte1);
+    font-weight: 100;
+    font-size: 3em;
+    padding: 6px;
+}
+
+header > p {
+    font-size: 1em;
+    padding: 6px;
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 3px 3px 3px 10px;
+    height: 36px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    border-radius: 6px;
+    background-color: var(--cor0);
+}
+
+body {
+    background: url(imagens/bg.jpg) center fixed;
+}
+
+main {
+    min-width: 480px;
+    max-width: 800px;
+    height: 100vh;
+    background-color: lightgray;
+    margin: auto;
+    padding: 6px;
+}
+
+main h2 {
+    font-family: var(--fonte1);
+    font-size: 2em;
+    font-weight: 100;
+    padding: 10px 0px 10px 0px;
+}
+
+article {
+    min-width: 400px;
+    max-width: 720px;
+    margin: auto;
+    color: black;
+    padding: 6px;
+}
+
+article img {
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px;
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.contact {
+    font-family: diablo;
+    font-size: 1.6em;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.link {
+    border: 2px solid rgba(128, 128, 128, 0.644);
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    color: white;
+    background-color: var(--cor1);
+    padding: 6px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+    text-decoration: none;
+}
